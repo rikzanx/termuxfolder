@@ -18,7 +18,7 @@ while current_time <= end_time:
     url_full = url+time_str+".jpg"
     print(no)
     no+=1
-    response = requests.head(url)
+    response = requests.head(url_full)
     if response.status_code == 200:
         print(url_full)
         print("Link dapat diakses.")
